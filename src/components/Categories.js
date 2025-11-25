@@ -1,16 +1,16 @@
-
-
 const Categories = ({Categories,onSelect}) => {
     console.log( Categories );
     return (
         <div id="categoies">
-            <h2>주제를 선택하세요</h2>
+            <p>주제를 선택하세요.</p>
             <ul>
                 { Categories.map((item,idx)=>{
                     return(
                     <li key={idx}
-                        onClick={()=>{onSelect(item)}}>{item}</li>
+                        className={`category-item item-${idx} stack-card`}
+                        onClick={()=>{onSelect(item)}}><p>{item}</p></li>
                     )
+                    
                 })
             }
         </ul>
