@@ -2,7 +2,6 @@ const Categories = ({Categories,onSelect}) => {
     console.log( Categories );
     return (
         <div id="categoies">
-            <p>주제를 선택하세요.</p>
             <ul>
                 { Categories.map((item,idx)=>{
                     return(
