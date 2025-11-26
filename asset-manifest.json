@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/quiz/static/css/main.aa52532e.css",
-    "main.js": "/quiz/static/js/main.291bff0e.js",
+    "main.css": "/quiz/static/css/main.3a9e5fbb.css",
+    "main.js": "/quiz/static/js/main.ac753b00.js",
     "static/media/reze.png": "/quiz/static/media/reze.99effa92a38244e0a9a9.png",
     "static/media/power.png": "/quiz/static/media/power.023e7f3c43161d3d103a.png",
     "static/media/demonslayer.jpg": "/quiz/static/media/demonslayer.a5da502914237d5ec7d0.jpg",
@@ -9,11 +9,11 @@
     "static/media/ChainsawMan.jpg": "/quiz/static/media/ChainsawMan.dcbd8588b5b665c678dd.jpg",
     "static/media/sF.jpg": "/quiz/static/media/sF.8edb0d0a7f525738359f.jpg",
     "index.html": "/quiz/index.html",
-    "main.aa52532e.css.map": "/quiz/static/css/main.aa52532e.css.map",
-    "main.291bff0e.js.map": "/quiz/static/js/main.291bff0e.js.map"
+    "main.3a9e5fbb.css.map": "/quiz/static/css/main.3a9e5fbb.css.map",
+    "main.ac753b00.js.map": "/quiz/static/js/main.ac753b00.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa52532e.css",
-    "static/js/main.291bff0e.js"
+    "static/css/main.3a9e5fbb.css",
+    "static/js/main.ac753b00.js"
   ]
 }
