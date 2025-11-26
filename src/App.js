@@ -12,6 +12,12 @@ const App = () => {
   const [filterQuiz,setfilterQuiz] = useState([]); //퀴즈 js
   const [finish,setFinish] =useState(false); //끝나는 js
   const [score, setScore] = useState(0); //점수 js
+  const imgMap = {
+  "귀멸의 칼날": "guimyeol",
+  "스파이패밀리": "spyfamily",
+  "주술회전": "jujutsu",
+  "체인소 맨": "chainsawman",
+};
 
  // 사운드 기능
   useEffect(() => {
@@ -88,6 +94,7 @@ const App = () => {
         onScore={handleScore}
         score={score}
         category={category}
+        imgMap={imgMap}
         />
         }
         {category && !finish && (

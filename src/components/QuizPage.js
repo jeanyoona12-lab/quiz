@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-const QuizPage = ({quizes,onFinish,onScore,category}) => {
+const QuizPage = ({quizes,onFinish,onScore,category,imgMap}) => {
     const [current,setCurrent] = useState(0);
     const handleClick = (idx)=>{
         //정답 체크
@@ -32,10 +32,7 @@ const QuizPage = ({quizes,onFinish,onScore,category}) => {
                 }
             </ul>
             <div className='exam'>
-                <img 
-            src={`${process.env.PUBLIC_URL}/images/${category}.png`} 
-            alt="" 
-                    />
+                <img src={`${process.env.PUBLIC_URL}/images/${imgMap[category]}.png`} alt="" />
             </div>
         </div>
     </div>
