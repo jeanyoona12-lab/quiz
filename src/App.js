@@ -66,7 +66,10 @@ const App = () => {
       loop
       playsInline
     >
-      <source src="../images/chainsawvideo.mp4" type="video/mp4" />
+      <source 
+    src={`${process.env.PUBLIC_URL}/images/chainsawvideo.mp4`}
+    type="video/mp4"
+      />
     </video> 
         <div className="reze"></div> 
         <div className="power"></div>
