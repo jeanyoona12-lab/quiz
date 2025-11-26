@@ -164,9 +164,9 @@ p{
     z-index: 1;
 }
 .stack-card:hover p {
-    background-color: transparent;
+    /* background-color: transparent; */
     backdrop-filter: none;
-    opacity: 0;
+    display: none;
 }
 
 /* 개별 스타일 */
