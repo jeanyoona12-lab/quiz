@@ -33,7 +33,6 @@ const QuizPage = ({quizes,onFinish,onScore,category}) => {
             </ul>
             <div className='exam'>
                 <img src={`/images/${category}.png`}/>
-                <p>{category}</p>
             </div>
         </div>
     </div>

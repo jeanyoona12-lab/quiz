@@ -20,12 +20,29 @@
 ul,ol{ list-style: none;}
 a{ text-decoration: none; color: inherit; }
 #root{
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* 배경 css */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+    /* background-color: rgba(0,0,0,0.2); */
+    opacity: 90%;
+    
+}
+
 p{
+    color: rgb(243, 243, 243);
     font-family: 'Pretendard';
 }
 @media all and (max-width:360px){
@@ -41,22 +58,39 @@ p{
 #app{
     padding: 2rem;
     text-align: center;
-    background-color: aliceblue;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     width: 360px;
     height: 640px;
     border-radius: 3rem;
     position: relative;
-    box-shadow: 0 12px 20px rgba(0,0,0,0.20);
     > h1{
         font-family: 'Simple';
-        color: rgb(41, 41, 41);
+        color: rgb(243, 243, 243);
     }
-
 }
-
+/* 바깥 버튼 css */
+.sound-btn {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 12px 20px;
+    border-radius: 14px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: 0.3s;
+    &:hover{
+        filter: brightness(0.8);
+    }
+}
 #categoies{
     ul{
-        margin-top: 40px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -124,16 +158,16 @@ p{
 
 /* 개별 스타일 */
 .item-0 { 
-    background-image: url(../assets/demonslayer.jpg) 
+    background-image: url('../components/assets/demonslayer.jpg') 
 }
 .item-1 { 
-    background-image: url(../assets/gojo.jpg) 
+    background-image: url('../components/assets/sF.jpg') 
 }
 .item-2 { 
-    background-image: url(../assets/sF.jpg) 
+    background-image: url('../components/assets/gojo.jpg') 
 }
 .item-3 { 
-    background-image: url(../assets/Chainsaw\ Man.jpg) 
+    background-image: url('../components/assets/ChainsawMan.jpg') 
 }
 
 #quiz-page{
@@ -147,15 +181,18 @@ p{
         li{
             padding-top: 0.7rem;
             text-align: center;
-            color: rgb(55, 81, 104);
             border-radius: 20px;
             width: 100%;
             height: 45px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            /* 글래스 */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
                 &:hover{
-                box-shadow: 0 12px 20px rgba(0,0,0,0.20);
-                transform: translateY(-1px) scale(1.01);
+                    cursor: pointer;
+                    box-shadow: 0 12px 20px rgba(0,0,0,0.20);
+                    transform: translateY(-1px) scale(1.01);
             }
         }
     }
@@ -212,4 +249,53 @@ p{
 }
 .sel{
     color: #222;
+}
+.backGround{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reze{
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    width: 360px;
+    height: 640px;
+    background-size: cover;
+    background-image:url('../components/assets/reze.png');
+    animation: slideUp 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) forwards;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.power{
+    position: absolute;
+    left: 53%;
+    top: 37.5%;
+    width: 620px;
+    height: 620px;
+    
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-image: url('../components/assets/power.png');
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) forwards;
+}
+
+/* 애니메이션 처리 */
+@keyframes slideUp {
+    0% {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
 }
