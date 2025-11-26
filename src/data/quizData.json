@@ -3,35 +3,35 @@
     "quizzes" : [
         {
             "id" : 1,
-            "category" : "귀멸의 칼날",
+            "category" : "귀멸의칼날",
             "question" : "탄지로가 애니 초반 사용하는 호흡은 무엇일까?",
             "choices" : ["해의 호흡", "물의 호흡", "바람의 호흡", "번개의 호흡"],
             "correct" : 2
         },
         {
             "id" : 2,
-            "category" : "귀멸의 칼날",
+            "category" : "귀멸의칼날",
             "question" : "네즈코가 최초로 변한 형태에서 눈의 색은?",
             "choices" : ["보라색","빨강색","주황색","분홍색"],
             "correct" : 4
         },
         {
             "id" : 3,
-            "category" : "귀멸의 칼날",
+            "category" : "귀멸의칼날",
             "question" : "우즈이 텐겐의 무기는 어떤 형태일까?",
             "choices" : ["쌍검","창","철퇴","낫"],
             "correct" : 1
         },
         {
             "id" : 4,
-            "category" : "귀멸의 칼날",
+            "category" : "귀멸의칼날",
             "question" : "이노스케의 기본 무장 이름은?",
             "choices" : ["야수의 칼","수정된 검","짐승의 칼","톱니형 칼날"],
             "correct" : 3
         },
         {
             "id" : 5,
-            "category" : "귀멸의 칼날",
+            "category" : "귀멸의칼날",
             "question" : "상현 1 '코쿠시보우'의 무기는?",
             "choices" : ["생체검","달의 검","육도월도","육도검"],
             "correct" : 4
@@ -108,35 +108,35 @@
         },
         {
             "id" : 16,
-            "category" : "체인소 맨",
+            "category" : "체인소맨",
             "question" : "파워는 어떤 종족인가?",
             "choices" : ["인간", "악마", "마인(악마+인간)", "요괴"],
             "correct" : 3
         },
         {
             "id" : 17,
-            "category" : "체인소 맨",
+            "category" : "체인소맨",
             "question" : "폭력의 마인은 얼굴에 무엇을 쓰고 다닐까?",
             "choices" : ["가면", "헬멧", "붕대", "기계 마스크"],
             "correct" : 1
         },
         {
             "id" : 18,
-            "category" : "체인소 맨",
+            "category" : "체인소맨",
             "question" : "덴지가 체인소맨으로 변신하기 위해 필요한 조건은?",
             "choices" : ["포치타", "분노", "계약 단어", "피"],
             "correct" : 4
         },
         {
             "id" : 19,
-            "category" : "체인소 맨",
+            "category" : "체인소맨",
             "question" : "덴지가 처음 계약한 악마는 누구인가?",
             "choices" : ["체인소 악마 포치타", "여우의 악마", "피의 악마", "지배의 악마"],
             "correct" : 1
         },
         {
             "id" : 20,
-            "category" : "체인소 맨",
+            "category" : "체인소맨",
             "question" : "코베니의 직업은?",
             "choices" : ["햄버거가게 아르바이트생", "대학생", "데빌 헌터", "경찰"],
             "correct" : 3
