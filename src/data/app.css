@@ -174,10 +174,11 @@ p{
     background-image: url('../components/assets/demonslayer.jpg') 
 }
 .item-1 { 
-    background-image: url('../components/assets/sF.jpg') 
-}
-.item-2 { 
     background-image: url('../components/assets/gojo.jpg') 
+}
+
+.item-2 { 
+    background-image: url('../components/assets/sF.jpg') 
 }
 .item-3 { 
     background-image: url('../components/assets/ChainsawMan.jpg') 
